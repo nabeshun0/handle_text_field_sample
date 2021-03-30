@@ -25,6 +25,9 @@ class MyCustomForm extends StatefulWidget {
 class _MyCustomFormState extends State<MyCustomForm> {
   final myController = TextEditingController();
 
+  String text1 = '';
+  String text2 = '';
+
   @override
   void initState() {
     super.initState();
@@ -38,6 +41,9 @@ class _MyCustomFormState extends State<MyCustomForm> {
   }
 
   void _printLatestValue() {
+    setState(() {
+      text2 = myController.text;
+    });
     print('Second text field: ${myController.text}');
   }
 
@@ -48,16 +54,24 @@ class _MyCustomFormState extends State<MyCustomForm> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextField(
               onChanged: (text) {
+                setState(() {
+                  text1 = text;
+                });
                 print('First text field: $text');
               },
             ),
             TextField(
               controller: myController,
             ),
-            Text('data'),
+            SizedBox(height: 16),
+            Text('TextField1: $text1'),
+            SizedBox(height: 16),
+            Text('TextField2: $text2'),
+            // Text('data'),
           ],
         ),
       ),
