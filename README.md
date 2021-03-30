@@ -1,16 +1,6 @@
 # handle_text_field_sample
 
-A new Flutter application.
+![2021-03-30 11-40-31 2021-03-30 11_41_03](https://user-images.githubusercontent.com/38596913/112926056-d8c17b00-914d-11eb-8b24-f7e4a1d23e5a.gif)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Handle changes to a text field](https://flutter.dev/docs/cookbook/forms/text-field-changes)
